@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible website problem.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe a public-facing website issue. For order, payment or account support, contact the operator through the website.
+        Do not post passwords, tokens, customer details or private ticket/order links.
+  - type: input
+    id: environment
+    attributes:
+      label: Page URL / browser / device
+      placeholder: Public page URL; browser version; desktop or mobile
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give a minimal sequence that another person can follow.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or relevant logs
+      description: Optional. Remove personal data and secrets before uploading.
